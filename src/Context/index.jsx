@@ -24,8 +24,8 @@ export const StateContextProvider = ({ children }) => {
                 shortColumnNames: 0,
             },
             headers: {
-                'X-RapidAPI-Key': process.env.NEXT_PUBLIC_RAPIDAPI_KEY,
-                'X-RapidAPI-Host': 'visual-crossing-weather.p.rapidapi.com'
+                'X-RapidAPI-Key': import.meta.env.VITE_RAPIDAPI_KEY,
+                'X-RapidAPI-Host': import.meta.env.VITE_RAPIDAPI_HOST
             }
         }
 
